@@ -1,13 +1,15 @@
 <template>
-  <main class="bg-[#1E1E1E]">
-    <div class="text-white flex flex-col gap-16 max-w-[1224px] w-full mx-auto">
-      <CharactersListing />
-      <EpisodesListing />
-    </div>
-  </main>
+  <div class="flex flex-col gap-16">
+    <CharactersListing />
+    <EpisodesListing />
+  </div>
 </template>
 
 <script lang="ts" setup>
 import CharactersListing from "@/components/CharactersListing/index.vue";
 import EpisodesListing from "@/components/EpisodesListing/index.vue";
+
+useHead({
+  title: `Rick And Morty API`
+});
 </script>
