@@ -1,7 +1,12 @@
 <template>
   <div class="flex flex-col gap-16">
-    <CharactersListing />
-    <EpisodesListing />
+    <HomeHeroHeader />
+
+    <PageContainer>
+      <CharactersListing />
+
+      <EpisodesListing />
+    </PageContainer>
   </div>
 </template>
 

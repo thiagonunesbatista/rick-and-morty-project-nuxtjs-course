@@ -1,19 +1,21 @@
 <template>
-  <div class="flex gap-16">
-    <img :src="data.image" width="369" height="461" class="rounded-2xl" />
+  <PageContainer>
+    <div class="flex gap-16">
+      <img :src="data.image" width="369" height="461" class="rounded-2xl" />
 
-    <div class="flex flex-col gap-12">
-      <h1 class="text-5xl">{{ data.name }}</h1>
+      <div class="flex flex-col gap-12">
+        <h1 class="text-5xl">{{ data.name }}</h1>
 
-      <p>Praticou de {{ data.episode.length }} episódios</p>
+        <p>Praticou de {{ data.episode.length }} episódios</p>
 
-      <div class="flex gap-6">
-        <p>{{ data.status === "Alive" ? "Vivo" : "Morto" }}</p>
-        <p>{{ data.species }}</p>
-        <p>{{ data.gender }}</p>
+        <div class="flex gap-6">
+          <p>{{ data.status === "Alive" ? "Vivo" : "Morto" }}</p>
+          <p>{{ data.species }}</p>
+          <p>{{ data.gender }}</p>
+        </div>
       </div>
     </div>
-  </div>
+  </PageContainer>
 </template>
 
 <script setup>
